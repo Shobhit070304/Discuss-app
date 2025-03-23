@@ -16,9 +16,9 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_Token     String?
-  access_Token      String?
-  expires_At        Int?
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
   token_type        String?
   scope             String?
   id_token          String?
@@ -31,7 +31,7 @@ model Account {
 
 model Session {
   id            String   @id @default(cuid())
-  session_token String   @unique
+  sessionToken String   @unique
   userId        String
   expires       DateTime
 
