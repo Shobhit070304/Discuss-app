@@ -1,7 +1,7 @@
 import React from 'react'
 import { auth } from "@/auth";
-import { Input } from './ui/input';
 import AuthHeader from './AuthHeader';
+import SearchInput from './search/SearchInput';
 
 
 const Navbar = async () => {
@@ -12,7 +12,7 @@ const Navbar = async () => {
                 <h1 className='text-2xl font-bold'>Discuss</h1>
             </div>
             <div className='w-full flex'>
-                <Input placeholder='Search here' />
+                <SearchInput/>
             </div>
             <div className='w-full flex justify-end'>
                 <AuthHeader />
